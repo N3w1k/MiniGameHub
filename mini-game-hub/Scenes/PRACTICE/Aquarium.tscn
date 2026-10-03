@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bpbsgy545jxhl"]
+
+[ext_resource type="Texture2D" uid="uid://ciugkmtbtybnd" path="res://Assets/kenney_fish-pack_2/PNG/Double/background_terrain.png" id="1_aeda3"]
+[ext_resource type="FontFile" uid="uid://dc3ooda2lkmf7" path="res://Assets/Fonts/RoadRage-Regular.ttf" id="2_1rrlc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1rrlc"]
+font = ExtResource("2_1rrlc")
+font_size = 200
+font_color = Color(0.79607844, 0.3529412, 0.31764707, 0.8352941)
+outline_color = Color(0.12941177, 0.7058824, 1, 1)
+shadow_color = Color(0, 0.20784314, 0.64705884, 0.64705884)
+
+[node name="ROOT" type="Node2D" unique_id=1995584183]
+
+[node name="BackgroundTerrain" type="Sprite2D" parent="." unique_id=592590027]
+position = Vector2(1281, 539)
+scale = Vector2(19.984375, 8.406249)
+texture = ExtResource("1_aeda3")
+
+[node name="Label" type="Label" parent="." unique_id=1839049799]
+offset_left = 672.0
+offset_top = -45.000004
+offset_right = 1270.0
+offset_bottom = 231.0
+scale = Vector2(1.8305702, 1.5122265)
+text = "Aquarium"
+label_settings = SubResource("LabelSettings_1rrlc")
+horizontal_alignment = 1
+vertical_alignment = 1
