@@ -1,20 +1,28 @@
 [gd_scene format=3 uid="uid://bpbsgy545jxhl"]
 
-[ext_resource type="Texture2D" uid="uid://ciugkmtbtybnd" path="res://Assets/kenney_fish-pack_2/PNG/Double/background_terrain.png" id="1_aeda3"]
-[ext_resource type="FontFile" uid="uid://dc3ooda2lkmf7" path="res://Assets/Fonts/RoadRage-Regular.ttf" id="2_1rrlc"]
+[ext_resource type="Texture2D" uid="uid://dh576r43qs42t" path="res://Assets/kenney_fish-pack_2/Fond marin.jpg" id="1_d7xob"]
+[ext_resource type="Texture2D" uid="uid://bm70twn6qk451" path="res://Assets/kenney_fish-pack_2/PNG/Default/background_terrain_top.png" id="2_a7vtr"]
 [ext_resource type="Texture2D" uid="uid://doqk6dnyp6af7" path="res://Assets/kenney_fish-pack_2/PNG/Double/seaweed_green_b.png" id="2_mfejt"]
 [ext_resource type="Texture2D" uid="uid://onc4mh4yiqa2" path="res://Assets/kenney_fish-pack_2/PNG/Double/terrain_sand_top_b.png" id="2_okyyl"]
 [ext_resource type="Texture2D" uid="uid://vfd2gu3ar458" path="res://Assets/kenney_fish-pack_2/PNG/Double/seaweed_orange_b.png" id="3_d7xob"]
 [ext_resource type="Texture2D" uid="uid://ck5qdipk20p4w" path="res://Assets/kenney_fish-pack_2/PNG/Double/terrain_dirt_top_c.png" id="3_v5bwe"]
 [ext_resource type="Texture2D" uid="uid://bxidb5sg0n8w5" path="res://Assets/kenney_fish-pack_2/PNG/Double/seaweed_pink_a_outline.png" id="4_iv50f"]
+[ext_resource type="Texture2D" uid="uid://dc8e11oq574gn" path="res://Assets/kenney_fish-pack_2/PNG/Default/background_rock_b.png" id="5_mj12w"]
+[ext_resource type="Texture2D" uid="uid://b4fphrhdde8vx" path="res://Assets/kenney_fish-pack_2/PNG/Default/background_seaweed_g.png" id="6_a7vtr"]
 [ext_resource type="Texture2D" uid="uid://djuowgx70pmtd" path="res://Assets/kenney_fish-pack_2/PNG/Double/seaweed_grass_a_outline.png" id="6_dp257"]
 [ext_resource type="Texture2D" uid="uid://dcyergrf2kwpe" path="res://Assets/kenney_fish-pack_2/PNG/Double/rock_b.png" id="7_mj12w"]
 [ext_resource type="Texture2D" uid="uid://2ahfg65er0nq" path="res://Assets/kenney_fish-pack_2/PNG/Double/rock_a.png" id="8_a7vtr"]
+[ext_resource type="Texture2D" uid="uid://ccijwh0ec1dwy" path="res://Assets/kenney_fish-pack_2/PNG/Default/seaweed_pink_a.png" id="10_3rh83"]
+[ext_resource type="FontFile" uid="uid://btigq2q70s7bx" path="res://Assets/Fonts/EastSeaDokdo-Regular.ttf" id="10_iv50f"]
+[ext_resource type="AudioStream" uid="uid://csj6qqndqies1" path="res://Sounds/evolvingvibes-hawaii-relax-loop-579277.mp3" id="11_dp257"]
+[ext_resource type="Texture2D" uid="uid://d0yfv8sf24odi" path="res://Assets/kenney_fish-pack_2/PNG/Default/background_seaweed_c.png" id="12_26qft"]
+[ext_resource type="Texture2D" uid="uid://byp4ixgrvu2u7" path="res://Assets/kenney_fish-pack_2/PNG/Default/seaweed_orange_b.png" id="14_jf6i1"]
+[ext_resource type="Texture2D" uid="uid://cis8xepjxp3n8" path="res://Assets/kenney_fish-pack_2/PNG/Default/seaweed_orange_b_outline.png" id="16_r023x"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_1rrlc"]
-font = ExtResource("2_1rrlc")
+font = ExtResource("10_iv50f")
 font_size = 150
-font_color = Color(0.79607844, 0.3529412, 0.31764707, 0.8352941)
+font_color = Color(1.0172917, 0.5232049, 0.15263994, 1)
 outline_color = Color(0.12941177, 0.7058824, 1, 1)
 shadow_color = Color(0, 0.20784314, 0.64705884, 0.64705884)
 
@@ -22,10 +30,28 @@ shadow_color = Color(0, 0.20784314, 0.64705884, 0.64705884)
 
 [node name="Background" type="Node2D" parent="." unique_id=1324537502]
 
-[node name="Sea" type="Sprite2D" parent="Background" unique_id=592590027]
-position = Vector2(1278.0001, 570)
-scale = Vector2(19.984375, 8.406249)
-texture = ExtResource("1_aeda3")
+[node name="FondMarin" type="Sprite2D" parent="Background" unique_id=2060845414]
+position = Vector2(1281.9999, 393)
+scale = Vector2(1.669271, 1.2067901)
+texture = ExtResource("1_d7xob")
+
+[node name="BackgroundTerrainTop" type="Sprite2D" parent="Background" unique_id=1580450012]
+position = Vector2(589.3575, 752.342)
+rotation = 0.072970696
+scale = Vector2(18.746881, 2.1948524)
+texture = ExtResource("2_a7vtr")
+
+[node name="BackgroundTerrainTop2" type="Sprite2D" parent="Background" unique_id=1195119496]
+position = Vector2(1728.9999, 749)
+rotation = -0.07643341
+scale = Vector2(5.934057, 0.9512347)
+texture = ExtResource("2_a7vtr")
+
+[node name="BackgroundTerrainTop3" type="Sprite2D" parent="Background" unique_id=947778303]
+position = Vector2(2278, 742.00006)
+rotation = -0.02419138
+scale = Vector2(9.07646, 0.9512347)
+texture = ExtResource("2_a7vtr")
 
 [node name="SeaweedGreenB" type="Sprite2D" parent="Background" unique_id=1783641031]
 position = Vector2(343.99988, 458)
@@ -41,6 +67,21 @@ texture = ExtResource("3_d7xob")
 position = Vector2(262.0001, 648)
 scale = Vector2(1.71875, 2.234375)
 texture = ExtResource("4_iv50f")
+
+[node name="BackgroundSeaweedC" type="Sprite2D" parent="Background" unique_id=1031724928]
+position = Vector2(2013, 561)
+scale = Vector2(2.6796825, 5.6796875)
+texture = ExtResource("12_26qft")
+
+[node name="BackgroundRockB" type="Sprite2D" parent="Background" unique_id=1478601506]
+position = Vector2(1932, 634)
+scale = Vector2(3.96875, 3.546875)
+texture = ExtResource("5_mj12w")
+
+[node name="BackgroundSeaweedG" type="Sprite2D" parent="Background" unique_id=1916469]
+position = Vector2(1308, 646.5)
+scale = Vector2(2.6875, 3.265625)
+texture = ExtResource("6_a7vtr")
 
 [node name="TerrainSandTopB" type="Sprite2D" parent="Background" unique_id=932256333]
 position = Vector2(323.00003, 826)
@@ -62,20 +103,30 @@ position = Vector2(2238.5, 824.9955)
 scale = Vector2(5.039062, 1.4374293)
 texture = ExtResource("2_okyyl")
 
-[node name="SeaweedGrassAOutline" type="Sprite2D" parent="Background/TerrainSandTopB4" unique_id=1194889134]
-position = Vector2(-237.04808, -208.00706)
-scale = Vector2(0.30077523, 2.2175004)
+[node name="SeaweedPinkA" type="Sprite2D" parent="Background" unique_id=183133817]
+position = Vector2(1648, 644)
+scale = Vector2(4.296875, 9.0625)
+texture = ExtResource("10_3rh83")
+
+[node name="SeaweedGrassAOutline" type="Sprite2D" parent="Background" unique_id=1194889134]
+position = Vector2(1044, 526)
+scale = Vector2(1.515625, 3.1875002)
 texture = ExtResource("6_dp257")
 
 [node name="RockB" type="Sprite2D" parent="Background" unique_id=1193250146]
-position = Vector2(871, 507)
-scale = Vector2(5.734375, 6.6328125)
+position = Vector2(907, 582)
+scale = Vector2(3.96875, 4.25)
 texture = ExtResource("7_mj12w")
 
 [node name="RockA" type="Sprite2D" parent="Background" unique_id=1360218093]
 position = Vector2(1119, 640)
 scale = Vector2(2.9921875, 2.96875)
 texture = ExtResource("8_a7vtr")
+
+[node name="SeaweedOrangeB2" type="Sprite2D" parent="Background" unique_id=2052759515]
+position = Vector2(1569, 770.00006)
+scale = Vector2(2.265625, 1.96875)
+texture = ExtResource("14_jf6i1")
 
 [node name="TerrainDirtTopC" type="Sprite2D" parent="Background" unique_id=2131058189]
 position = Vector2(697, 940.08606)
@@ -87,6 +138,10 @@ position = Vector2(1976.25, 940)
 scale = Vector2(9.13672, 2.203125)
 texture = ExtResource("3_v5bwe")
 
+[node name="SeaweedOrangeBOutline" type="Sprite2D" parent="Background" unique_id=2052057908]
+position = Vector2(2151, 747)
+texture = ExtResource("16_r023x")
+
 [node name="Label" type="Label" parent="." unique_id=1839049799]
 offset_left = 672.0
 offset_top = -45.000004
@@ -97,3 +152,9 @@ text = "Aquarium"
 label_settings = SubResource("LabelSettings_1rrlc")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1628183728]
+stream = ExtResource("11_dp257")
+volume_db = -13.619
+autoplay = true
+parameters/looping = true
