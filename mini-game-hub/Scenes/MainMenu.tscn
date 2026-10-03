@@ -19,7 +19,8 @@ offset_top = 24.0
 offset_bottom = 74.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 32
-text = "Mini Game Hub"
+text = "TP BIPF
+"
 horizontal_alignment = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=645300047]
@@ -45,5 +46,5 @@ target_scene = ExtResource("2")
 
 [node name="Button_TP3oct" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=1007955250 instance=ExtResource("1")]
 layout_mode = 2
-text = "TP 3 octobre"
+text = "TP 261003"
 target_scene = ExtResource("3_8saeu")
