@@ -2,20 +2,90 @@
 
 [ext_resource type="Texture2D" uid="uid://ciugkmtbtybnd" path="res://Assets/kenney_fish-pack_2/PNG/Double/background_terrain.png" id="1_aeda3"]
 [ext_resource type="FontFile" uid="uid://dc3ooda2lkmf7" path="res://Assets/Fonts/RoadRage-Regular.ttf" id="2_1rrlc"]
+[ext_resource type="Texture2D" uid="uid://doqk6dnyp6af7" path="res://Assets/kenney_fish-pack_2/PNG/Double/seaweed_green_b.png" id="2_mfejt"]
+[ext_resource type="Texture2D" uid="uid://onc4mh4yiqa2" path="res://Assets/kenney_fish-pack_2/PNG/Double/terrain_sand_top_b.png" id="2_okyyl"]
+[ext_resource type="Texture2D" uid="uid://vfd2gu3ar458" path="res://Assets/kenney_fish-pack_2/PNG/Double/seaweed_orange_b.png" id="3_d7xob"]
+[ext_resource type="Texture2D" uid="uid://ck5qdipk20p4w" path="res://Assets/kenney_fish-pack_2/PNG/Double/terrain_dirt_top_c.png" id="3_v5bwe"]
+[ext_resource type="Texture2D" uid="uid://bxidb5sg0n8w5" path="res://Assets/kenney_fish-pack_2/PNG/Double/seaweed_pink_a_outline.png" id="4_iv50f"]
+[ext_resource type="Texture2D" uid="uid://djuowgx70pmtd" path="res://Assets/kenney_fish-pack_2/PNG/Double/seaweed_grass_a_outline.png" id="6_dp257"]
+[ext_resource type="Texture2D" uid="uid://dcyergrf2kwpe" path="res://Assets/kenney_fish-pack_2/PNG/Double/rock_b.png" id="7_mj12w"]
+[ext_resource type="Texture2D" uid="uid://2ahfg65er0nq" path="res://Assets/kenney_fish-pack_2/PNG/Double/rock_a.png" id="8_a7vtr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_1rrlc"]
 font = ExtResource("2_1rrlc")
-font_size = 200
+font_size = 150
 font_color = Color(0.79607844, 0.3529412, 0.31764707, 0.8352941)
 outline_color = Color(0.12941177, 0.7058824, 1, 1)
 shadow_color = Color(0, 0.20784314, 0.64705884, 0.64705884)
 
 [node name="ROOT" type="Node2D" unique_id=1995584183]
 
-[node name="BackgroundTerrain" type="Sprite2D" parent="." unique_id=592590027]
-position = Vector2(1281, 539)
+[node name="Background" type="Node2D" parent="." unique_id=1324537502]
+
+[node name="Sea" type="Sprite2D" parent="Background" unique_id=592590027]
+position = Vector2(1278.0001, 570)
 scale = Vector2(19.984375, 8.406249)
 texture = ExtResource("1_aeda3")
+
+[node name="SeaweedGreenB" type="Sprite2D" parent="Background" unique_id=1783641031]
+position = Vector2(343.99988, 458)
+scale = Vector2(2.09375, 4.75)
+texture = ExtResource("2_mfejt")
+
+[node name="SeaweedOrangeB" type="Sprite2D" parent="Background" unique_id=945370093]
+position = Vector2(362.99997, 678)
+scale = Vector2(1.5273439, 1.3515625)
+texture = ExtResource("3_d7xob")
+
+[node name="SeaweedPinkAOutline" type="Sprite2D" parent="Background" unique_id=350952214]
+position = Vector2(262.0001, 648)
+scale = Vector2(1.71875, 2.234375)
+texture = ExtResource("4_iv50f")
+
+[node name="TerrainSandTopB" type="Sprite2D" parent="Background" unique_id=932256333]
+position = Vector2(323.00003, 826)
+scale = Vector2(5.0080333, 1.4374293)
+texture = ExtResource("2_okyyl")
+
+[node name="TerrainSandTopB2" type="Sprite2D" parent="Background" unique_id=1907621396]
+position = Vector2(959, 826)
+scale = Vector2(5.0080333, 1.4374293)
+texture = ExtResource("2_okyyl")
+
+[node name="TerrainSandTopB3" type="Sprite2D" parent="Background" unique_id=2142506948]
+position = Vector2(1600.5142, 824.9955)
+scale = Vector2(5.0080333, 1.4374293)
+texture = ExtResource("2_okyyl")
+
+[node name="TerrainSandTopB4" type="Sprite2D" parent="Background" unique_id=1132281491]
+position = Vector2(2238.5, 824.9955)
+scale = Vector2(5.039062, 1.4374293)
+texture = ExtResource("2_okyyl")
+
+[node name="SeaweedGrassAOutline" type="Sprite2D" parent="Background/TerrainSandTopB4" unique_id=1194889134]
+position = Vector2(-237.04808, -208.00706)
+scale = Vector2(0.30077523, 2.2175004)
+texture = ExtResource("6_dp257")
+
+[node name="RockB" type="Sprite2D" parent="Background" unique_id=1193250146]
+position = Vector2(871, 507)
+scale = Vector2(5.734375, 6.6328125)
+texture = ExtResource("7_mj12w")
+
+[node name="RockA" type="Sprite2D" parent="Background" unique_id=1360218093]
+position = Vector2(1119, 640)
+scale = Vector2(2.9921875, 2.96875)
+texture = ExtResource("8_a7vtr")
+
+[node name="TerrainDirtTopC" type="Sprite2D" parent="Background" unique_id=2131058189]
+position = Vector2(697, 940.08606)
+scale = Vector2(10.859375, 2.20178)
+texture = ExtResource("3_v5bwe")
+
+[node name="TerrainDirtTopC2" type="Sprite2D" parent="Background" unique_id=427476614]
+position = Vector2(1976.25, 940)
+scale = Vector2(9.13672, 2.203125)
+texture = ExtResource("3_v5bwe")
 
 [node name="Label" type="Label" parent="." unique_id=1839049799]
 offset_left = 672.0
