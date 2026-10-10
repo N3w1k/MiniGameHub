@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://btmsh0sjhifqt"]
+
+[ext_resource type="Script" uid="uid://cays0lfuf88tj" path="res://fish_3.gd" id="1_dxl5b"]
+[ext_resource type="Texture2D" uid="uid://b7ysofmpmuapb" path="res://Assets/kenney_fish-pack_2/PNG/Default/fish_green_outline.png" id="1_jlrpt"]
+
+[node name="Root" type="Node2D" unique_id=994275547]
+metadata/_edit_vertical_guides_ = [1000.0]
+
+[node name="Fish3" type="Sprite2D" parent="." unique_id=2070641009]
+position = Vector2(206, 98)
+texture = ExtResource("1_jlrpt")
+script = ExtResource("1_dxl5b")
+limit_R = 2000

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b8uapp37ymn74"]
+
+[ext_resource type="Texture2D" uid="uid://sholsfcllg8c" path="res://Assets/kenney_fish-pack_2/PNG/Default/fish_red_skeleton_outline.png" id="1_4flbx"]
+
+[node name="root_player" type="Node2D" unique_id=623524913]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=394859594]
+scale = Vector2(2, 2)
+texture = ExtResource("1_4flbx")

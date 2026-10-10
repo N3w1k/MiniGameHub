@@ -18,6 +18,14 @@
 [ext_resource type="Texture2D" uid="uid://d0yfv8sf24odi" path="res://Assets/kenney_fish-pack_2/PNG/Default/background_seaweed_c.png" id="12_26qft"]
 [ext_resource type="Texture2D" uid="uid://byp4ixgrvu2u7" path="res://Assets/kenney_fish-pack_2/PNG/Default/seaweed_orange_b.png" id="14_jf6i1"]
 [ext_resource type="Texture2D" uid="uid://cis8xepjxp3n8" path="res://Assets/kenney_fish-pack_2/PNG/Default/seaweed_orange_b_outline.png" id="16_r023x"]
+[ext_resource type="PackedScene" path="res://Scenes/UI/BackToMenuButton.tscn" id="19_jf6i1"]
+[ext_resource type="PackedScene" uid="uid://bjl261lbb2ttt" path="res://Scenes/PRACTICE/fish_2.tscn" id="20_qohsa"]
+[ext_resource type="Texture2D" uid="uid://c8a1lgx46ns7y" path="res://Assets/kenney_fish-pack_2/PNG/Default/fish_blue_outline.png" id="21_njexa"]
+[ext_resource type="Texture2D" uid="uid://bomhseu6k0pdi" path="res://Assets/kenney_fish-pack_2/PNG/Default/fish_brown_outline.png" id="22_fxhov"]
+[ext_resource type="Texture2D" uid="uid://b7ysofmpmuapb" path="res://Assets/kenney_fish-pack_2/PNG/Default/fish_green_outline.png" id="23_6ykcj"]
+[ext_resource type="Texture2D" uid="uid://dr6en608eop8e" path="res://Assets/kenney_fish-pack_2/PNG/Default/fish_orange_outline.png" id="24_aygla"]
+[ext_resource type="Texture2D" uid="uid://4ajyhcl52fvm" path="res://Assets/kenney_fish-pack_2/PNG/Default/fish_pink_outline.png" id="25_j8bya"]
+[ext_resource type="Script" uid="uid://caa0frmig2vrc" path="res://fish_3R.gd" id="26_njexa"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_1rrlc"]
 font = ExtResource("10_iv50f")
@@ -94,8 +102,8 @@ scale = Vector2(5.0080333, 1.4374293)
 texture = ExtResource("2_okyyl")
 
 [node name="TerrainSandTopB3" type="Sprite2D" parent="Background" unique_id=2142506948]
-position = Vector2(1600.5142, 824.9955)
-scale = Vector2(5.0080333, 1.4374293)
+position = Vector2(1598.5142, 824.9955)
+scale = Vector2(5.039284, 1.4374293)
 texture = ExtResource("2_okyyl")
 
 [node name="TerrainSandTopB4" type="Sprite2D" parent="Background" unique_id=1132281491]
@@ -158,3 +166,252 @@ stream = ExtResource("11_dp257")
 volume_db = -13.619
 autoplay = true
 parameters/looping = true
+
+[node name="BackToMenuButton2" parent="." unique_id=1766964627 instance=ExtResource("19_jf6i1")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 42.0
+offset_top = 984.0
+offset_right = 242.0
+offset_bottom = 1034.0
+grow_vertical = 0
+
+[node name="Fishs" type="Node2D" parent="." unique_id=1652437743]
+position = Vector2(-17, 210)
+
+[node name="fish8" parent="Fishs" unique_id=1704729804 instance=ExtResource("20_qohsa")]
+position = Vector2(-176, 69)
+scale = Vector2(2, 2)
+speed = 110.0
+limit_R = 2000
+limit_L = 50
+
+[node name="fish9" parent="Fishs" unique_id=1924660582 instance=ExtResource("20_qohsa")]
+position = Vector2(93, 357)
+texture = ExtResource("21_njexa")
+speed = 100.0
+limit_R = 1895
+limit_L = 500
+
+[node name="fish10" parent="Fishs" unique_id=289189160 instance=ExtResource("20_qohsa")]
+position = Vector2(-557, 605)
+scale = Vector2(3, 3)
+texture = ExtResource("22_fxhov")
+speed = 100.0
+limit_R = 2200
+limit_L = -50
+
+[node name="fish11" parent="Fishs" unique_id=581960951 instance=ExtResource("20_qohsa")]
+position = Vector2(-643, 369)
+scale = Vector2(4, 4)
+texture = ExtResource("23_6ykcj")
+speed = 150.0
+limit_R = 2800
+limit_L = -500
+
+[node name="fish12" parent="Fishs" unique_id=818367450 instance=ExtResource("20_qohsa")]
+position = Vector2(-306, -22)
+scale = Vector2(4, 4)
+texture = ExtResource("24_aygla")
+speed = 100.0
+limit_R = 1500
+limit_L = 200
+
+[node name="fish13" parent="Fishs" unique_id=1509742293 instance=ExtResource("20_qohsa")]
+position = Vector2(-588, 85)
+scale = Vector2(3, 3)
+texture = ExtResource("25_j8bya")
+speed = 120.0
+limit_R = 3000
+limit_L = 500
+
+[node name="fish2" parent="Fishs" unique_id=120345241 instance=ExtResource("20_qohsa")]
+position = Vector2(-85.999985, 670)
+scale = Vector2(5, 5)
+speed = 130.0
+limit_R = 2150
+limit_L = 100
+
+[node name="fish3" parent="Fishs" unique_id=1103834815 instance=ExtResource("20_qohsa")]
+position = Vector2(-86, 203)
+texture = ExtResource("21_njexa")
+speed = 100.0
+
+[node name="fish4" parent="Fishs" unique_id=638104807 instance=ExtResource("20_qohsa")]
+position = Vector2(-370, 267)
+scale = Vector2(5, 5)
+texture = ExtResource("22_fxhov")
+speed = 120.0
+limit_R = 2000
+limit_L = 150
+
+[node name="fish5" parent="Fishs" unique_id=1544984259 instance=ExtResource("20_qohsa")]
+position = Vector2(-94, 401)
+scale = Vector2(2, 2)
+texture = ExtResource("23_6ykcj")
+speed = 150.0
+limit_R = 1600
+limit_L = -100
+
+[node name="fish6" parent="Fishs" unique_id=1857187561 instance=ExtResource("20_qohsa")]
+position = Vector2(-197, 493)
+scale = Vector2(2, 2)
+texture = ExtResource("24_aygla")
+speed = 120.0
+limit_L = 100
+
+[node name="fish7" parent="Fishs" unique_id=120296623 instance=ExtResource("20_qohsa")]
+position = Vector2(87, 170)
+texture = ExtResource("25_j8bya")
+speed = 150.0
+limit_R = 3000
+limit_L = 500
+
+[node name="fish14" parent="Fishs" unique_id=581350671 instance=ExtResource("20_qohsa")]
+position = Vector2(72, 455)
+scale = Vector2(2, 2)
+texture = ExtResource("25_j8bya")
+speed = 140.0
+limit_L = 500
+
+[node name="Fishs2" type="Node2D" parent="." unique_id=836551459]
+position = Vector2(3101, 217)
+
+[node name="fish8" parent="Fishs2" unique_id=1066539233 instance=ExtResource("20_qohsa")]
+position = Vector2(-593, -62)
+scale = Vector2(2, 2)
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 110.0
+limit_R = 2500
+limit_L = -2000
+
+[node name="fish9" parent="Fishs2" unique_id=1094794029 instance=ExtResource("20_qohsa")]
+position = Vector2(-670, 142)
+texture = ExtResource("21_njexa")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 100.0
+limit_R = 2500
+limit_L = -1895
+
+[node name="fish10" parent="Fishs2" unique_id=547218702 instance=ExtResource("20_qohsa")]
+position = Vector2(-557, 605)
+scale = Vector2(3, 3)
+texture = ExtResource("22_fxhov")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 100.0
+limit_R = 1500
+limit_L = -2200
+
+[node name="fish11" parent="Fishs2" unique_id=1637781140 instance=ExtResource("20_qohsa")]
+position = Vector2(-643, 369)
+scale = Vector2(4, 4)
+texture = ExtResource("23_6ykcj")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 150.0
+limit_R = 1500
+limit_L = -2850
+
+[node name="fish12" parent="Fishs2" unique_id=1808725482 instance=ExtResource("20_qohsa")]
+position = Vector2(-333, 1)
+scale = Vector2(4, 4)
+texture = ExtResource("24_aygla")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 100.0
+limit_R = 1250
+limit_L = 1000
+
+[node name="fish13" parent="Fishs2" unique_id=1805918139 instance=ExtResource("20_qohsa")]
+position = Vector2(-401, 453)
+scale = Vector2(3, 3)
+texture = ExtResource("25_j8bya")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 120.0
+limit_R = 2500
+limit_L = -2555
+
+[node name="fish2" parent="Fishs2" unique_id=1961400516 instance=ExtResource("20_qohsa")]
+position = Vector2(-409.99994, 281.00003)
+scale = Vector2(5, 5)
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 130.0
+limit_R = 1500
+limit_L = -2100
+
+[node name="fish3" parent="Fishs2" unique_id=979533557 instance=ExtResource("20_qohsa")]
+position = Vector2(-86, 203)
+texture = ExtResource("21_njexa")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 100.0
+limit_R = 1000
+limit_L = -2000
+
+[node name="fish4" parent="Fishs2" unique_id=483717935 instance=ExtResource("20_qohsa")]
+position = Vector2(-217.00002, 591)
+scale = Vector2(5, 5)
+texture = ExtResource("22_fxhov")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 120.0
+limit_R = 2250
+limit_L = -2000
+
+[node name="fish5" parent="Fishs2" unique_id=1830787065 instance=ExtResource("20_qohsa")]
+position = Vector2(-94, 401)
+scale = Vector2(2, 2)
+texture = ExtResource("23_6ykcj")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 150.0
+limit_R = 2500
+limit_L = -1600
+
+[node name="fish6" parent="Fishs2" unique_id=2140535998 instance=ExtResource("20_qohsa")]
+position = Vector2(-197, 493)
+scale = Vector2(2, 2)
+texture = ExtResource("24_aygla")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 120.0
+limit_R = 2100
+limit_L = -2650
+
+[node name="fish7" parent="Fishs2" unique_id=1460108833 instance=ExtResource("20_qohsa")]
+position = Vector2(-435, 103)
+texture = ExtResource("25_j8bya")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 150.0
+limit_R = 2600
+limit_L = -3000
+
+[node name="fish14" parent="Fishs2" unique_id=1472932551 instance=ExtResource("20_qohsa")]
+position = Vector2(-706, 490)
+scale = Vector2(2, 2)
+texture = ExtResource("25_j8bya")
+flip_h = true
+script = ExtResource("26_njexa")
+direction_x = -1
+speed = 140.0
+limit_R = 2500
+limit_L = -2635
