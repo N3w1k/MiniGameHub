@@ -171,11 +171,22 @@ parameters/looping = true
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 42.0
-offset_top = 984.0
-offset_right = 242.0
-offset_bottom = 1034.0
+offset_left = 24.0
+offset_top = 1010.0
+offset_right = 224.0
+offset_bottom = 1060.0
 grow_vertical = 0
+
+[node name="BackToMenuButton3" parent="." unique_id=40700251 instance=ExtResource("19_jf6i1")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 947.0
+offset_right = 225.0
+offset_bottom = 997.0
+grow_vertical = 0
+text = "Change target"
 
 [node name="Fishs" type="Node2D" parent="." unique_id=1652437743]
 position = Vector2(-17, 210)
