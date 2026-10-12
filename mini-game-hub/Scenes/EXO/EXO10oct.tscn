@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bb6ipsanl8sc0"]
 
 [ext_resource type="PackedScene" uid="uid://c7nluts0bsmwd" path="res://Scenes/TP/Vehicle/toggling_car.tscn" id="1_jinkb"]
+[ext_resource type="PackedScene" path="res://Scenes/UI/BackToMenuButton.tscn" id="2_isir1"]
 
 [node name="Root" type="Node2D" unique_id=883542736]
 
@@ -23,3 +24,13 @@ position = Vector2(847, 50)
 
 [node name="Target_3" type="Marker2D" parent="." unique_id=919103766]
 position = Vector2(44, 256)
+
+[node name="BackToMenuButton2" parent="." unique_id=298251664 instance=ExtResource("2_isir1")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 42.0
+offset_top = 984.0
+offset_right = 242.0
+offset_bottom = 1034.0
+grow_vertical = 0
