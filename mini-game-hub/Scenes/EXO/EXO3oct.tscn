@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://03hydlpnpxjd"]
+
+[ext_resource type="Script" uid="uid://dt2v2bwip5dxj" path="res://Scripts/tp_3_oct.gd" id="1_vch8g"]
+[ext_resource type="PackedScene" uid="uid://d2snst4r1biy8" path="res://Scenes/TP/Vehicle/vehicle.tscn" id="2_o4ibe"]
+
+[node name="Root" type="Node2D" unique_id=1499738126]
+script = ExtResource("1_vch8g")
+
+[node name="VehicleContain" type="Node2D" parent="." unique_id=1528054353]
+position = Vector2(570, 304)
+
+[node name="VehicleSprite" parent="VehicleContain" unique_id=1311869189 node_paths=PackedStringArray("target") instance=ExtResource("2_o4ibe")]
+direction = Vector2(1, 2)
+target = NodePath("../../EnHautADroite")
+
+[node name="EnHautADroite" type="Marker2D" parent="." unique_id=1879180008]
+position = Vector2(1084, 52)

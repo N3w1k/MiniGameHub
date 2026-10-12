@@ -3,7 +3,9 @@
 [ext_resource type="PackedScene" path="res://Scenes/UI/GameButton.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://bl35nxv6fm4c5" path="res://Scenes/Games/ExampleGame.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://dv4h05c1yrbkc" path="res://Scenes/TP/TP3oct.tscn" id="3_8saeu"]
+[ext_resource type="PackedScene" uid="uid://03hydlpnpxjd" path="res://Scenes/EXO/EXO3oct.tscn" id="4_df05h"]
 [ext_resource type="PackedScene" uid="uid://dm0kqvyqml6pd" path="res://Scenes/TP/TP10oct.tscn" id="4_ghw46"]
+[ext_resource type="PackedScene" uid="uid://bb6ipsanl8sc0" path="res://Scenes/EXO/EXO10oct.tscn" id="6_8um5k"]
 
 [node name="MainMenu" type="Control" unique_id=634933511]
 layout_mode = 3
@@ -49,7 +51,17 @@ layout_mode = 2
 text = "TP 3 octobre"
 target_scene = ExtResource("3_8saeu")
 
+[node name="Button_TP3oct2" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=55187236 instance=ExtResource("1")]
+layout_mode = 2
+text = "EXO 3 octobre"
+target_scene = ExtResource("4_df05h")
+
 [node name="Button_TP10oct" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=1790727985 instance=ExtResource("1")]
 layout_mode = 2
 text = "TP 10 octobre"
 target_scene = ExtResource("4_ghw46")
+
+[node name="Button_TP10oct2" parent="CenterContainer/ScrollContainer/GameButtonList" unique_id=887982956 instance=ExtResource("1")]
+layout_mode = 2
+text = "EXO 10 octobre"
+target_scene = ExtResource("6_8um5k")
