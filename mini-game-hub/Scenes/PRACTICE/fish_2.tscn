@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bjl261lbb2ttt"]
+
+[ext_resource type="Texture2D" uid="uid://b7s8x52t0vrul" path="res://Assets/kenney_fish-pack_2/PNG/Default/fish_red_outline.png" id="1_6o6sp"]
+[ext_resource type="Script" uid="uid://cays0lfuf88tj" path="res://fish_3.gd" id="2_6o6sp"]
+
+[node name="fish2" type="Sprite2D" unique_id=1704729804]
+texture = ExtResource("1_6o6sp")
+script = ExtResource("2_6o6sp")

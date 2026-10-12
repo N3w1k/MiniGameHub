@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dv4h05c1yrbkc"]
 
 [ext_resource type="Script" uid="uid://dt2v2bwip5dxj" path="res://Scripts/tp_3_oct.gd" id="1_do4nd"]
+[ext_resource type="PackedScene" path="res://Scenes/UI/BackToMenuButton.tscn" id="3_hkn2s"]
 [ext_resource type="PackedScene" uid="uid://d2snst4r1biy8" path="res://Scenes/TP/Vehicle/vehicle.tscn" id="4_gygm2"]
 
 [node name="Root" type="Node2D" unique_id=1499738126]
@@ -15,3 +16,13 @@ target = NodePath("../../EnHautADroite")
 
 [node name="EnHautADroite" type="Marker2D" parent="." unique_id=1879180008]
 position = Vector2(1084, 52)
+
+[node name="BackToMenuButton2" parent="." unique_id=1771168856 instance=ExtResource("3_hkn2s")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 42.0
+offset_top = 984.0
+offset_right = 242.0
+offset_bottom = 1034.0
+grow_vertical = 0
