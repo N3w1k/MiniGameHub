@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dg8in8ho8twak"]
+
+[ext_resource type="Texture2D" uid="uid://bvyrbgt5pyiil" path="res://Assets/Cars/ambulance.png" id="2_edkqs"]
+[ext_resource type="Script" uid="uid://f24tg00aw3hp" path="res://Scripts/move_sprite_per_rotation.gd" id="2_r7obx"]
+
+[node name="Main" type="Node2D" unique_id=1997045596]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=402393816]
+position = Vector2(488, 296)
+texture = ExtResource("2_edkqs")
+script = ExtResource("2_r7obx")
+ambulance_speed = 10.0
+ambulance_direction = Vector2(0, 200)
