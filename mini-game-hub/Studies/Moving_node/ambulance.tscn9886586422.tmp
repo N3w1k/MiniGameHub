@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dwdbrkicvjxfb"]
+
+[ext_resource type="Texture2D" uid="uid://bvyrbgt5pyiil" path="res://Assets/Cars/ambulance.png" id="1_vcord"]
+[ext_resource type="Script" uid="uid://bi0jpfctb0mpk" path="res://Studies/Moving_nodes/limit_vector_move.gd" id="2_vcord"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1256479423]
+texture = ExtResource("1_vcord")
+script = ExtResource("2_vcord")
+ambulance_speed = 50.0
+viewport_width = 500
+viewport_height = null

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://2jdkb4eyprf8"]
+
+[ext_resource type="PackedScene" uid="uid://dwdbrkicvjxfb" path="res://Studies/Moving_nodes/Moving_scenes/moving_ambulance.tscn" id="1_1yth1"]
+
+[node name="Main" type="Node2D" unique_id=192785802]
+
+[node name="Sprite2D" parent="." unique_id=1256479423 instance=ExtResource("1_1yth1")]
+position = Vector2(370, 214)
+rotation = -1.7697638

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dwdbrkicvjxfb"]
+
+[ext_resource type="Texture2D" uid="uid://bvyrbgt5pyiil" path="res://Assets/Cars/ambulance.png" id="1_vcord"]
+[ext_resource type="Script" uid="uid://dn8dcymd43x3v" path="res://target_move.gd" id="2_4egm6"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1256479423]
+texture = ExtResource("1_vcord")
+script = ExtResource("2_4egm6")
