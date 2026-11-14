@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dxdkbj2rnwytu"]
+
+[ext_resource type="Script" uid="uid://p53cuvh71x66" path="res://Studies/Operator_node/Operator_exo.gd" id="1_ea0io"]
+
+[node name="OperatorMain" type="Node2D" unique_id=1417736877]
+script = ExtResource("1_ea0io")

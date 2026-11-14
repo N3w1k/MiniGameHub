@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c2mcopid4vf44"]
+
+[ext_resource type="Script" uid="uid://cefvj08f6o4lq" path="res://Studies/Class_node/class.gd" id="1_3l6xn"]
+
+[node name="ClassMain" type="Node2D" unique_id=875391492]
+script = ExtResource("1_3l6xn")
+grogmyr_life = 67
+gob_name = "Gnark le troud cul"
+gob_size = "Tout petit"
+gob_AC = 12
+gob_HP = 7
+gob_speed = 30.0

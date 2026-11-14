@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bieu1yv0feac6"]
+
+[ext_resource type="Script" uid="uid://d4fr5oxkgx602" path="res://For_exo1.gd" id="1_7ogem"]
+
+[node name="ForMain" type="Node2D" unique_id=645827732]
+script = ExtResource("1_7ogem")
+enemy_hp = 30
+boss_hp = 60

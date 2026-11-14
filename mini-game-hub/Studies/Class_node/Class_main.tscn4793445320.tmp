@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c2mcopid4vf44"]
+
+[ext_resource type="Script" uid="uid://cefvj08f6o4lq" path="res://Studies/Class_node/class.gd" id="1_3l6xn"]
+[ext_resource type="Script" uid="uid://crkt58fxpn764" path="res://character_export.gd" id="2_7cccp"]
+
+[node name="ClassMain" type="Node2D" unique_id=875391492]
+script = ExtResource("1_3l6xn")
+grogmyr_life = 67
+
+[node name="Biloute" type="Node2D" parent="." unique_id=1547173758]
+script = ExtResource("2_7cccp")
+name = &"Biloute"
+size = Array[String]([])
+AC = 4
+HP = 100
+Speed = 20.0

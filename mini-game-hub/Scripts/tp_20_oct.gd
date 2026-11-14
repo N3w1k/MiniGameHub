@@ -42,7 +42,7 @@ func _ready() -> void:
 			total_hp += current_enemy_hp
 			
 			print(sentence_to_print)
-		tableau += ligne + "\n"
+		tableau += ligne + "\n" 
 	print("total hp : ", total_hp)
 	print(tableau)
 	

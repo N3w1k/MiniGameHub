@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://boqnqh3gj0m3a"]
+
+[ext_resource type="PackedScene" uid="uid://dwdbrkicvjxfb" path="res://Studies/Moving_node/Moving_scenes/moving_ambulance.tscn" id="1_jrted"]
+[ext_resource type="Script" uid="uid://mxc6xdumtivg" path="res://Studies/Moving_node/Moving_scripts/switch_target_move_debug.gd" id="2_aiexs"]
+
+[node name="Node2D" type="Node2D" unique_id=72931958]
+
+[node name="Marker2D_one" type="Marker2D" parent="." unique_id=1001164945]
+position = Vector2(214, 95)
+
+[node name="Marker2D_two" type="Marker2D" parent="." unique_id=2009797047]
+position = Vector2(216, 282)
+
+[node name="Marker2D_tree" type="Marker2D" parent="." unique_id=75433250]
+position = Vector2(490, 299)
+
+[node name="Marker2D_four" type="Marker2D" parent="." unique_id=648118579]
+position = Vector2(481, 53)
+
+[node name="Sprite2D" parent="." unique_id=1256479423 node_paths=PackedStringArray("target_list") instance=ExtResource("1_jrted")]
+script = ExtResource("2_aiexs")
+ambulance_speed = 40.0
+target_list = [NodePath("../Marker2D_one"), NodePath("../Marker2D_two"), NodePath("../Marker2D_tree"), NodePath("../Marker2D_four")]
