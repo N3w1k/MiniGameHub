@@ -3,17 +3,20 @@ class_name Goblin
 var name: String
 var size: String
 var AC: int
-var HP: int
-var maxhp: int
+var maxhp: int = 100
+var HP: int:
+	set(value):
+		HP = clamp(value, 0, maxhp)
+	get:
+		return HP
 var speed: float
 
 
-func _init(p_name: String, p_size: String, p_AC: int, p_HP: int, p_maxhp: int, p_speed: float) -> void:
+func _init(p_name: String, p_size: String, p_AC: int, p_HP: int, p_speed: float) -> void:
 	name = p_name
 	size = p_size
 	AC = p_AC
 	HP = p_HP
-	maxhp = p_maxhp
 	speed = p_speed
 
 func _display_goblin_stats() -> void:

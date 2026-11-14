@@ -7,6 +7,7 @@ extends Node2D
 @export var gob_HP: int
 @export var gob_speed: float
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var Gnark = Goblin.new(gob_name,gob_size,gob_AC,gob_HP,gob_speed)
