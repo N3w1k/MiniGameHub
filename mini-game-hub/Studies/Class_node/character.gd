@@ -1,4 +1,4 @@
-class_name Character
+class_name Characterexo
 
 var nom: String = "Jean-Michel"
 var health: int = 100

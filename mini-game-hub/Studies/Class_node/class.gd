@@ -12,15 +12,19 @@ extends Node2D
 func _ready() -> void:
 	var Gnark = Goblin.new(gob_name,gob_size,gob_AC,gob_HP,gob_speed)
 	Gnark._display_goblin_stats()
+	Gnark._heal(20)
+	Gnark._display_goblin_stats()
+	Gnark.HP += 500
+	print(Gnark.HP)
 	var grogmyr = Dwarf_fighter.new("Grogmyr", grogmyr_life, "Sword", 20)
 	grogmyr.display_stats()
-	var hero := Character.new()
+	var hero := Characterexo.new()
 	hero.print_health()
 	hero.take_damage(20)
 	hero.print_health()
 	print(hero.get_instance_id())
 	hero.display_stats()
-	var biloute := Character.new()
+	var biloute := Characterexo.new()
 	biloute.nom = "Bibouze"
 	biloute.speed = 30
 	print(biloute.get_instance_id())
@@ -32,7 +36,7 @@ func _ready() -> void:
 	copie.print_health()
 	print(copie.get_instance_id())
 	copie.display_stats()
-	var trou_du_cul := Character.new()
+	var trou_du_cul := Characterexo.new()
 	trou_du_cul.nom = "Cougnou"
 	trou_du_cul.weapon_damage = 300
 	print(trou_du_cul.get_instance_id())

@@ -21,3 +21,6 @@ func _init(p_name: String, p_size: String, p_AC: int, p_HP: int, p_speed: float)
 
 func _display_goblin_stats() -> void:
 	print(name, " ", size," ", AC," ", HP, " ", speed, " ")
+
+func _heal(amount: int) -> void:
+	HP = HP + amount 

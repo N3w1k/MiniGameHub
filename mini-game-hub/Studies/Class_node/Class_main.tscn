@@ -8,5 +8,5 @@ grogmyr_life = 67
 gob_name = "Gnark le troud cul"
 gob_size = "Tout petit"
 gob_AC = 12
-gob_HP = 200
+gob_HP = 90
 gob_speed = 30.0
