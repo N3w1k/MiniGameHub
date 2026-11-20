@@ -1,5 +1,5 @@
 class_name oiseau
-extends Animal
+extends animal
 
 var race: String
 

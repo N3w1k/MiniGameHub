@@ -1,5 +1,5 @@
 class_name ours
-extends Animal
+extends animal
 
 func _crier() -> void:
 	print("woaaaaah !")

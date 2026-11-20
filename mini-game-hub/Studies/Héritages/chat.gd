@@ -1,5 +1,5 @@
 class_name chat
-extends Animal
+extends animal
 
 func _crier() -> void:
 	print("miaou !")

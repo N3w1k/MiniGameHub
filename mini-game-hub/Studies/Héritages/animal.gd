@@ -1,4 +1,4 @@
-class_name Animal
+class_name animal
 extends RefCounted
 
 var nom: String
