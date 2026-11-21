@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://brscwjkmg5jgo"]
+
+[ext_resource type="Script" uid="uid://bmbjdb47eaw3t" path="res://studies/Enum_node/enum.gd" id="1_ulu2r"]
+
+[node name="Main" type="Node2D" unique_id=1736615470]
+script = ExtResource("1_ulu2r")

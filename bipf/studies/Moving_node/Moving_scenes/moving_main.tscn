@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://2jdkb4eyprf8"]
+
+[ext_resource type="PackedScene" uid="uid://dwdbrkicvjxfb" path="res://studies/Moving_node/Moving_scenes/moving_ambulance.tscn" id="1_1yth1"]
+
+[node name="Main" type="Node2D" unique_id=192785802]
+
+[node name="Sprite2D" parent="." unique_id=1256479423 node_paths=PackedStringArray("target") instance=ExtResource("1_1yth1")]
+position = Vector2(630, 312)
+ambulance_speed = 50.0
+target = NodePath("../Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=547602105]
+position = Vector2(196, 158)

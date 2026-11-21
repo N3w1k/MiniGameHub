@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://cadbc61k4ssn6"]
-
-[ext_resource type="Script" uid="uid://w86d6obn34m5" path="res://Studies/Array_node/Array_practice.gd" id="1_4fbcd"]
-
-[node name="ArrayMain" type="Node2D" unique_id=645827732]
-script = ExtResource("1_4fbcd")

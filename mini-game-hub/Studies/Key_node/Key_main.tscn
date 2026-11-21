@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://fs157xncsldk"]
-
-[ext_resource type="Script" uid="uid://b0fkb4s0x786d" path="res://Studies/Key_node/Key_exos.gd" id="1_eo3o5"]
-
-[node name="KeyMain" type="Node2D" unique_id=488371169]
-script = ExtResource("1_eo3o5")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bn2s6afmsesaw"]
+
+[ext_resource type="Script" uid="uid://ce7dgff720tbj" path="res://studies/Héritages/mainheritage.gd" id="1_wrj5b"]
+
+[node name="Héritages" type="Node2D" unique_id=247912822]
+script = ExtResource("1_wrj5b")
